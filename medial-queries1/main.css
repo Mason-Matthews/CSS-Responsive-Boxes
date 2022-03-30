@@ -1,3 +1,47 @@
+* {
+  border: 1px solid orange;
+}
+
 body {
+  margin: 0;
+  text-align: center;
   background: blanchedalmond;
+}
+
+ .container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.a {
+  border: 3px solid black;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.b {
+  border: 3px solid black;
+  min-height: 60vh;
+  flex-grow: 6;
+  margin: 10px;
+} 
+
+.c {
+  border: 3px solid black;
+  flex-grow: 1;
+  margin: 10px;
+} 
+
+@media (min-width:600px) {
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+  }
+
 }
